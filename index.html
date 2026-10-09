@@ -104,6 +104,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .bp-how-cta{padding:20px}
 }
 </style>
+<style>
+/* ---------- EVALUATE · visual ---------- */
+.ev-filter{display:grid;grid-template-columns:1.25fr auto 1fr auto .9fr;align-items:center;gap:14px;margin-bottom:34px}
+.ev-stage{border-radius:14px;padding:18px 20px;border:1px solid var(--line-d);display:flex;align-items:center;gap:14px}
+.ev-stage .k{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,241,232,.55);font-weight:700}
+.ev-stage .v{font-family:var(--display);font-size:1.35rem;line-height:1.15;color:var(--cream)}
+.ev-stage.s1{background:rgba(0,0,0,.14)}
+.ev-stage.s2{background:rgba(201,169,108,.10);border-color:rgba(201,169,108,.35)}
+.ev-stage.s3{background:var(--gold);border-color:var(--gold)}
+.ev-stage.s3 .k{color:rgba(42,26,28,.65)}
+.ev-stage.s3 .v{color:var(--ink)}
+.ev-dots{display:flex;flex-wrap:wrap;gap:4px;width:58px;flex:0 0 58px}
+.ev-dots i{width:8px;height:8px;border-radius:50%;background:rgba(247,241,232,.35)}
+.ev-dots.few{width:34px;flex-basis:34px}
+.ev-dots.few i{width:10px;height:10px;background:var(--ink)}
+.ev-arrow{color:var(--gold);display:grid;place-items:center}
+.ev-arrow svg{width:26px;height:26px}
+.ev-hex{width:44px;height:44px;flex:0 0 44px}
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ev-card{border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden;background:rgba(255,255,255,.03);transition:.2s ease}
+.ev-card:hover{background:rgba(255,255,255,.06);transform:translateY(-3px)}
+.ev-art{background:rgba(0,0,0,.16);border-bottom:1px solid var(--line-d);padding:18px 18px 10px}
+.ev-art svg{display:block;width:100%;height:auto}
+.ev-txt{padding:20px 22px 24px}
+.ev-txt .num{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.14em;font-weight:700}
+.ev-txt h3{color:var(--cream);font-size:1.45rem;margin:6px 0 8px}
+.ev-txt p{color:rgba(247,241,232,.72);margin:0;font-size:.95rem}
+@media (max-width:1000px){
+  .ev-filter{grid-template-columns:1fr;gap:8px}
+  .ev-arrow{transform:rotate(90deg);height:26px}
+  .ev-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){ .ev-grid{grid-template-columns:1fr} }
+</style>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -405,14 +439,116 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="sec band" id="evaluate">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">How we suggest properties</span><h2>Every recommendation, earned.</h2><p>We back each property with a thoughtful evaluation — not just whatever is available to sell.</p></div>
-    <div class="eval">
-      <div class="e"><div class="num">01</div><h3>Location fundamentals</h3><p>Connectivity, surrounding infrastructure, community appeal, and long-term positioning.</p></div>
-      <div class="e"><div class="num">02</div><h3>Developer track record</h3><p>Reputation in the market, delivery history of past projects, and a broader market perspective.</p></div>
-      <div class="e"><div class="num">03</div><h3>Market timing</h3><p>Timing of entry can shape affordability, ROI, and your future participation in opportunities.</p></div>
-      <div class="e"><div class="num">04</div><h3>Payment structure</h3><p>Whether the payment plan and financial commitment genuinely align with your situation.</p></div>
-      <div class="e"><div class="num">05</div><h3>Demand potential</h3><p>Who the property will appeal to, and how the surrounding market supports that demand.</p></div>
-      <div class="e"><div class="num">06</div><h3>Long-term fit</h3><p>The best property isn't just attractive today — it should align with your long-term goals.</p></div>
+    <div class="sec-head"><span class="eyebrow">How we suggest properties</span><h2>Every recommendation, earned.</h2><p>Every project in the market goes through the same six checks. Only the few that pass all six make it to your shortlist.</p></div>
+
+    <div class="ev-filter" aria-label="Every launch goes through six checks before it reaches your shortlist">
+      <div class="ev-stage s1">
+        <div class="ev-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div><div class="k">Start</div><div class="v">Every launch in the market</div></div>
+      </div>
+      <div class="ev-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="ev-stage s2">
+        <svg class="ev-hex" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="#C9A96C" stroke-width="1.6"><path d="M22 3 38.5 12.5v19L22 41 5.5 31.5v-19Z"/><path d="M22 3v38M5.5 12.5l33 19M38.5 12.5l-33 19" stroke-opacity=".45"/></g><circle cx="22" cy="22" r="4" fill="#C9A96C"/></svg>
+        <div><div class="k">Filter</div><div class="v">6-point evaluation</div></div>
+      </div>
+      <div class="ev-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="ev-stage s3">
+        <div class="ev-dots few" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div><div class="k">You get</div><div class="v">A shortlist of 2–3</div></div>
+      </div>
+    </div>
+
+    <div class="ev-grid">
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#F7F1E8" stroke-opacity=".10"><path d="M0 30h240M0 60h240M0 90h240M40 0v120M100 0v120M160 0v120M220 0v120"/></g>
+          <path d="M0 78 C60 70 90 52 130 50 S200 40 240 22" fill="none" stroke="#C9A96C" stroke-width="5" stroke-opacity=".5" stroke-linecap="round"/>
+          <path d="M60 120 C70 90 90 70 120 58" fill="none" stroke="#C9A96C" stroke-width="3" stroke-opacity=".35" stroke-linecap="round"/>
+          <circle cx="120" cy="58" r="30" fill="none" stroke="#E0C98F" stroke-dasharray="3 4" stroke-opacity=".6"/>
+          <path d="M120 64s-13-11.5-13-21a13 13 0 0 1 26 0c0 9.5-13 21-13 21z" fill="#C9A96C"/><circle cx="120" cy="43" r="4.5" fill="#6D1C2F"/>
+          <g font-family="Outfit, sans-serif" font-size="10" font-weight="600" fill="#F7F1E8">
+            <circle cx="36" cy="26" r="4" fill="#E0C98F"/><text x="44" y="30">Metro</text>
+            <circle cx="182" cy="90" r="4" fill="#E0C98F"/><text x="190" y="94">Schools</text>
+            <circle cx="30" cy="100" r="4" fill="#E0C98F"/><text x="38" y="104">Highway</text>
+          </g></svg></div>
+        <div class="ev-txt"><div class="num">01</div><h3>Location fundamentals</h3><p>Connectivity, surrounding infrastructure, community appeal, and long-term positioning.</p></div>
+      </article>
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <line x1="16" y1="100" x2="224" y2="100" stroke="#F7F1E8" stroke-opacity=".3"/>
+          <g fill="rgba(247,241,232,.14)" stroke="#E0C98F" stroke-opacity=".55">
+            <rect x="34" y="62" width="40" height="38" rx="3"/><rect x="100" y="44" width="40" height="56" rx="3"/><rect x="166" y="24" width="40" height="76" rx="3"/>
+          </g>
+          <g fill="#E0C98F" fill-opacity=".45">
+            <rect x="42" y="70" width="8" height="6"/><rect x="58" y="70" width="8" height="6"/><rect x="42" y="82" width="8" height="6"/><rect x="58" y="82" width="8" height="6"/>
+            <rect x="108" y="52" width="8" height="6"/><rect x="124" y="52" width="8" height="6"/><rect x="108" y="64" width="8" height="6"/><rect x="124" y="64" width="8" height="6"/><rect x="108" y="76" width="8" height="6"/><rect x="124" y="76" width="8" height="6"/>
+            <rect x="174" y="32" width="8" height="6"/><rect x="190" y="32" width="8" height="6"/><rect x="174" y="44" width="8" height="6"/><rect x="190" y="44" width="8" height="6"/><rect x="174" y="56" width="8" height="6"/><rect x="190" y="56" width="8" height="6"/><rect x="174" y="68" width="8" height="6"/><rect x="190" y="68" width="8" height="6"/>
+          </g>
+          <g><circle cx="74" cy="60" r="10" fill="#C9A96C"/><path d="m69 60 3.5 3.5L79 57" fill="none" stroke="#6D1C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="140" cy="42" r="10" fill="#C9A96C"/><path d="m135 42 3.5 3.5L145 39" fill="none" stroke="#6D1C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="206" cy="22" r="10" fill="#C9A96C"/><path d="m201 22 3.5 3.5L211 19" fill="none" stroke="#6D1C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+          <text x="120" y="115" text-anchor="middle" font-family="Space Mono, monospace" font-size="9" letter-spacing="1.5" fill="#F7F1E8" fill-opacity=".6">DELIVERED ON TIME</text></svg></div>
+        <div class="ev-txt"><div class="num">02</div><h3>Developer track record</h3><p>Reputation in the market, delivery history of past projects, and a broader market perspective.</p></div>
+      </article>
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <line x1="16" y1="100" x2="224" y2="100" stroke="#F7F1E8" stroke-opacity=".3"/>
+          <path d="M16 62 C40 58 54 80 80 82 S110 74 126 60 S180 26 224 16" fill="none" stroke="#C9A96C" stroke-width="3" stroke-linecap="round"/>
+          <line x1="84" y1="82" x2="84" y2="100" stroke="#E0C98F" stroke-dasharray="3 3"/>
+          <circle cx="84" cy="82" r="7" fill="#C9A96C" stroke="#6D1C2F" stroke-width="2.5"/>
+          <rect x="56" y="30" width="62" height="22" rx="11" fill="#F7F1E8"/>
+          <text x="87" y="45" text-anchor="middle" font-family="Outfit, sans-serif" font-size="11" font-weight="600" fill="#6D1C2F">Enter here</text>
+          <path d="M84 52v20" stroke="#F7F1E8" stroke-opacity=".6" stroke-width="1.5"/>
+          <text x="224" y="115" text-anchor="end" font-family="Space Mono, monospace" font-size="9" letter-spacing="1.5" fill="#F7F1E8" fill-opacity=".6">TIME →</text></svg></div>
+        <div class="ev-txt"><div class="num">03</div><h3>Market timing</h3><p>Timing of entry can shape affordability, ROI, and your future participation in opportunities.</p></div>
+      </article>
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <text x="16" y="28" font-family="Space Mono, monospace" font-size="9" letter-spacing="1.5" fill="#F7F1E8" fill-opacity=".6">PAY IN STAGES</text>
+          <rect x="16" y="42" width="24" height="30" rx="4" fill="#C9A96C"/>
+          <rect x="44" y="42" width="96" height="30" rx="4" fill="#C9A96C" fill-opacity=".5"/>
+          <rect x="144" y="42" width="80" height="30" rx="4" fill="rgba(247,241,232,.16)" stroke="#E0C98F" stroke-opacity=".5"/>
+          <g font-family="Outfit, sans-serif" font-size="11" font-weight="600">
+            <text x="28" y="61" text-anchor="middle" fill="#6D1C2F">10%</text>
+            <text x="92" y="61" text-anchor="middle" fill="#2A1A1C">During build</text>
+            <text x="184" y="61" text-anchor="middle" fill="#F7F1E8">On handover</text>
+          </g>
+          <g font-family="Space Mono, monospace" font-size="8.5" fill="#F7F1E8" fill-opacity=".55" letter-spacing="1">
+            <text x="16" y="90">BOOK</text><text x="92" y="90" text-anchor="middle">INSTALMENTS</text><text x="224" y="90" text-anchor="end">KEYS</text>
+          </g>
+          <path d="M16 98h208" stroke="#F7F1E8" stroke-opacity=".25"/><circle cx="16" cy="98" r="3" fill="#C9A96C"/><circle cx="142" cy="98" r="3" fill="#C9A96C"/><circle cx="224" cy="98" r="3" fill="#E0C98F"/></svg></div>
+        <div class="ev-txt"><div class="num">04</div><h3>Payment structure</h3><p>Whether the payment plan and financial commitment genuinely align with your situation.</p></div>
+      </article>
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <defs><g id="evP"><circle cx="0" cy="-9" r="5"/><path d="M-8 6c0-6 3.6-9 8-9s8 3 8 9z"/></g></defs>
+          <g fill="rgba(247,241,232,.22)">
+            <use href="#evP" x="30" y="52"/><use href="#evP" x="56" y="52"/><use href="#evP" x="82" y="52"/><use href="#evP" x="108" y="52"/><use href="#evP" x="134" y="52"/><use href="#evP" x="160" y="52"/><use href="#evP" x="186" y="52"/><use href="#evP" x="212" y="52"/>
+            <use href="#evP" x="30" y="86"/><use href="#evP" x="56" y="86"/><use href="#evP" x="82" y="86"/><use href="#evP" x="108" y="86"/><use href="#evP" x="134" y="86"/><use href="#evP" x="160" y="86"/><use href="#evP" x="186" y="86"/><use href="#evP" x="212" y="86"/>
+          </g>
+          <g fill="#C9A96C"><use href="#evP" x="56" y="52"/><use href="#evP" x="108" y="52"/><use href="#evP" x="160" y="52"/><use href="#evP" x="212" y="52"/><use href="#evP" x="30" y="86"/><use href="#evP" x="82" y="86"/><use href="#evP" x="134" y="86"/><use href="#evP" x="186" y="86"/></g>
+          <text x="16" y="24" font-family="Space Mono, monospace" font-size="9" letter-spacing="1.5" fill="#F7F1E8" fill-opacity=".6">TENANTS &amp; FUTURE BUYERS</text>
+          <text x="120" y="114" text-anchor="middle" font-family="Outfit, sans-serif" font-size="10.5" font-weight="600" fill="#E0C98F">Who will want this home next?</text></svg></div>
+        <div class="ev-txt"><div class="num">05</div><h3>Demand potential</h3><p>Who the property will appeal to, and how the surrounding market supports that demand.</p></div>
+      </article>
+
+      <article class="ev-card">
+        <div class="ev-art" aria-hidden="true"><svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 100 C70 100 60 70 110 70 S160 40 210 34" fill="none" stroke="#F7F1E8" stroke-opacity=".18" stroke-width="12" stroke-linecap="round"/>
+          <path d="M20 100 C70 100 60 70 110 70 S160 40 210 34" fill="none" stroke="#C9A96C" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+          <circle cx="20" cy="100" r="6" fill="#C9A96C"/><circle cx="110" cy="70" r="6" fill="#C9A96C"/>
+          <path d="M210 34V8" stroke="#E0C98F" stroke-width="2"/><path d="M210 8h22l-6 6 6 6h-22z" fill="#C9A96C"/>
+          <g font-family="Space Mono, monospace" font-size="8.5" fill="#F7F1E8" fill-opacity=".65" letter-spacing="1">
+            <text x="20" y="116" text-anchor="middle">TODAY</text><text x="110" y="92" text-anchor="middle">HANDOVER</text><text x="202" y="18" text-anchor="end">YOUR GOAL</text>
+          </g></svg></div>
+        <div class="ev-txt"><div class="num">06</div><h3>Long-term fit</h3><p>The best property isn't just attractive today — it should align with your long-term goals.</p></div>
+      </article>
+
     </div>
   </div>
 </section>
